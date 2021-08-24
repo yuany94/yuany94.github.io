@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110934316-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110934316-1');
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Approaches to addressing network inference
+| Yuan Yuan | Ph.D. Candidate | Massachusetts Institute of Technology | IDSS   </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Yuan Yuan | MIT IDSS</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpeg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#pub">Papers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#talks">Talks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger active" href="index.html#notes">Notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="YuanYuanCV.pdf">CV</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="sample1">
+        <div class="my-auto">
+
+<div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">The note for "An interpretable approach for social network formation among heterogeneous agents"</h3>
+              <p>Feb 25, 2019</p>
+
+<p>This blog is used to give a brief introduction to our latest paper at <a href="https://www.nature.com/articles/s41467-018-07089-x">Nature Communications</a>.</p>
+
+<p>As an interdisciplinary researcher, I am always curious about how to integrate approaches from multiple disciplines. In my first year when I was studying microeconomics, I was fascinated by the mathematical beauty of the fundamental theorems of welfare economics. In the model, each consumer $i$ has her initial endowment $\mathbf{w}_i$, which is a real-valued vector. Consumers can exchange endowments with each other or producers. Then the price of each dimension of the endowment is determined, and the market achieves equilibrium and Pareto optimality. </p>
+
+<p>Welfare economics lets me witness the power of theoretical models [in our paper we refer to such power as <b>interpretability</b>]. However as an empiricist, I also hoped to see how this beautiful model corresponds to real-world data [referred to as <b>predictability</b>]. I realized that the vector-based representation of individuals is very similar to representation learning in the machine learning community. Classical algorithms include <b>word2vec</b>, which represents each word by a vector. Words with semantic similarity or relatedness would be represented by vectors with small cosine distance. </p>
+
+<p>Network embedding algorithms, such as DeepWalk or node2vec, extended word2vec to network data. Nodes that are closely connected or share similar local network structures are learned to have similar representations. The sociological insight was not well discussed in those papers. We conjecture that one contributing factor is <b>homophily</b>, which is a pervasive phenomenon describing that similar individuals tend to befriend each other. </p>
+
+<p>Network embedding algorithms typically have the following pipeline.After learning representation for each node using the network data, a network embedding algorithm splits nodes into training and test sets and trains a machine learning model (e.g., by using SVM or $k$NN) on the training set. The input is the learned representation of each node and the output is any attribute that is not used in the previous representation learning process. The effectiveness of the learned representations can be demonstrated by the prediction performance on the test set. </p>
+
+<p>Nonetheless, when we consider economic networks which involve exchanges as welfare economics does, those representation learning algorithms may fail to encapsulate important individual characteristics. Social exchange theory indicates that dissimilar individuals with their own advantages may interact and exchange. However, most network embedding models only implicitly considered homophily and ignored social exchange effects. </p>
+
+<p>Our work thus contributes in two aspects. First, we propose a model with both interpretability and predictability by combining approaches from economics and machine learning. Our interdisciplinary approach effectively avoids the lack of predictive power in real-world for most economic approaches and the lack of sociological interpretability for the network embedding algorithms. Second, we consider social exchange and homophily simultaneously. Although social exchanges and homophily have been studied for decades in social science, these two branches of research have been conducted independently. We therefore want to propose a unified model of these two competing effects. </p>
+
+<p>Here, we briefly explain how our model integrates interdisciplinary approaches to trade off between social exchange and homophily. We present an example definition of the marginal utility that $j$ gives to $i$, or $\Delta u_j(i)$: 
+
+$$\Delta u_j(i) = \sum_k \max(b_k (w_{jk}-w_{ik}), 0) - \sqrt{\frac{1}{K} \sum_k c_k^2 * {(w_{ik}-w_{jk})}^2}$$
+
+where $\mathbf{w}_i \in \mathbb{R}^K$ is called the $K$-dimensional <b>endowment vector</b> for individual $i$. $\mathbf{b}$ and $\mathbf{c}$ are called beneficial (costly) scaling parameters, meaning how benefit (costly) each dimension is. The equation consists of two components: the benefits of exchanges and the costs of difficulty in communications. The max and norm functions are used to guarantee positivity for respective terms. </p>
+
+<p>Our paper uses the Karate club network as an toy example. Karate club network was polarized to two parties because of a conflict between two leaders. Setting the dimensionality as 4, we learn the endowment vectors for all individuals. As shown the figure below, we interpret the indications of the four dimensions as the karate skill, willingness to learn, unobserved characteristic, and the opinion on the conflict, respectively.</p>
+
+<img style='height: auto; width: 99%; object-fit: contain' src="img/karate.png">
+
+<p>Overall, our work has four phases:</p>
+<ul>
+<li><b>Phase 1</b>: [Game theoretical model] We propose a game theoretical model that considers social exchange and homophily simultaneously. </li>
+<li><b>Phase 2</b>: [Representation learning] We input real-world network data and learn the endowment vectors for all individual. </li>
+<li><b>Phase 3</b>: [Testing] As most network embedding algorithms do, we show the learned endowment vectors are effective predictors of individual attributes. </li>
+<li><b>Phase 4</b>: [Agent-based modeling] Our model also predicts how the network structure would change if we tweaked the global parameters.</li>
+</ul>
+
+We next summarize important results in the this study.
+<ul>
+<li>We show the predictability of endowment vectors for individual attributes in several real-world networks, including Andorra nationwide communication network and the trade network between countries. </li>
+<li>In economic networks, traditional embedding networks may fail to incorporate important individual characteristics involving social exchange.</li>
+<li>By leveraging agent-based modeling, we discuss the implications of the development of communication or transportation technology--interactions would become more diverse and individuals would have easier access to another person the world. </li>
+</ul>
+
+<p>Of course there are several future directions that can be based on our study. For example, one can propose many other functional forms for the marginal utility, or even propose utility functions that is non-separable to additive marginal utility functions. In addition, one can also consider the marginal utility given by k-hop neighbors ($k>1$), comparative advantages, or dynamic networks. </p>
+
+<p><b>Other references:</b>
+<ul>
+<li>Mas-Colell, Andreu, Michael Dennis Whinston, and Jerry R. Green. Microeconomic theory. Vol. 1. New York: Oxford university press, 1995.</li>
+<li>Perozzi, Bryan, Rami Al-Rfou, and Steven Skiena. "Deepwalk: Online learning of social representations." Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining. ACM, 2014.</li>
+<li>Grover, Aditya, and Jure Leskovec. "node2vec: Scalable feature learning for networks." Proceedings of the 22nd ACM SIGKDD international conference on Knowledge discovery and data mining. ACM, 2016.</li>
+</ul>
+</p>
+
+
+<p><b>How to cite:</b>  <code> Yuan Yuan, Ahmad Alabdulkareem, and Alex Sandy Pentland. "An interpretable approach for social network formation among heterogeneous agents." Nature communications 9.1 (2018): 4704.</code> </p>
+<p><b>Or BibTex:</b> <br>
+<code>
+@article{yuan2018interpretable, <br>
+  title={An interpretable approach for social network formation among heterogeneous agents},<br>
+  author={Yuan, Yuan and Alabdulkareem, Ahmad and Pentland, Alex Sandy},<br>
+  journal={Nature communications},<br>
+  volume={9},<br>
+  number={1},<br>
+  pages={4704},<br>
+  year={2018},<br>
+  publisher={Nature Publishing Group}<br>
+}
+</code></p>
+
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary"></span>
+            </div>
+          </div>
+
+
+         
+      </section>
+
+          
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
+</html>
