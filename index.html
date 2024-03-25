@@ -196,9 +196,11 @@
       <em>
         "<a href="https://arxiv.org/abs/2312.15198">
         Do LLM Agents Exhibit Social Behavior?
-        </a>"
+        </a>" <a href="javascript:void(0)" onclick="toggleTLDR()">[tldr]</a> <div id="tldr" style="display:none;">
+    <p><strong>TLDR:</strong> This paper investigates whether Large Language Models (LLMs) like GPT-4 can exhibit social behaviors similar to humans, focusing on aspects like social learning, preference, and cooperation. Using classical laboratory experiments adapted for LLMs, the study finds that GPT-4 shows human-like social behaviors including distributional preferences, reciprocity, and responsiveness to group identity, with notable differences in fairness preference and social learning strategies.</p>
+</div>
       </em>
-    </li>
+    </li> 
 
     <li>
       Marios Papachristou and <strong>Yuan Yuan</strong> 
@@ -377,6 +379,18 @@ Nature Communications, IF=16.6, 2018.
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
 
+    <script>
+        function toggleTLDR() {
+            var tldr = document.getElementById("tldr");
+            if (tldr.style.display === "none") {
+                tldr.style.display = "block";
+            } else {
+                tldr.style.display = "none";
+            }
+        }
+    </script>
+
+	  
   </body>
 
 </html>
