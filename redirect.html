@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <script>
+        // Function to extract the URL parameter for redirection
+        function getQueryParam(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
+        // Capture the redirect URL from the query string
+        var redirectUrl = getQueryParam('url');
+
+        // Log the click event with Google Analytics
+        function logEventAndRedirect() {
+
+            gtag('config', 'UA-110934316-1', {
+                'page_path': '/redirect?url=' + encodeURIComponent(redirectUrl)
+            });
+
+            gtag('event', 'click', {
+                'event_category': 'External Link',
+                'event_label': redirectUrl,
+                'transport_type': 'beacon',
+                'event_callback': function() {
+                    window.location.href = redirectUrl;
+                }
+            });
+        }
+    </script>
+</head>
+<body onload="logEventAndRedirect()">
+    Redirecting...
+</body>
+</html>
