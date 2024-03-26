@@ -2,8 +2,13 @@
 <html>
 <head>
     <title>Redirecting...</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110934316-1"></script>
     <script>
-        // Function to extract the URL parameter for redirection
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-110934316-1');
+
         function getQueryParam(name) {
             name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
             var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
@@ -11,11 +16,14 @@
             return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
         }
 
-        // Capture the redirect URL from the query string
         var redirectUrl = getQueryParam('url');
 
-        // Log the click event with Google Analytics
         function logEventAndRedirect() {
+            if (!redirectUrl) {
+                console.error('Redirect URL is empty');
+                document.body.textContent = 'Error: No redirect URL specified.';
+                return;
+            }
 
             gtag('config', 'UA-110934316-1', {
                 'page_path': '/redirect?url=' + encodeURIComponent(redirectUrl)
