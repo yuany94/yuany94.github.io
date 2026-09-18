@@ -1,0 +1,340 @@
+[
+  {
+    "id": "openai",
+    "title": "AI Tech Reports",
+    "papers": [
+      {
+        "title": "LifeSciBench: Evaluating Language Models on Realistic, Expert-Level Tasks in the Life Sciences",
+        "authors": [
+          "Amelia Liu",
+          "Andrew Ho",
+          "Anne Marie Droste",
+          "et al. (including Yuan Yuan)"
+        ],
+        "year": "2026",
+        "venue": "OpenAI · Research preprint",
+        "url": "https://openai.com/index/introducing-life-sci-bench/",
+        "links": {
+          "Official page": "https://openai.com/index/introducing-life-sci-bench/",
+          "PDF": "https://cdn.openai.com/pdf/b4299379-0a97-4ffa-8b9b-c3fbb299caa9/lifescibench_preprint.pdf"
+        }
+      },
+      {
+        "title": "From Hard Refusals to Safe-Completions: Toward Output-Centric Safety Training",
+        "authors": [
+          "Yuan Yuan",
+          "Tina Sriskandarajah",
+          "Anna-Luisa Brakman",
+          "Alec Helyar",
+          "Alex Beutel",
+          "Andrea Vallone",
+          "Saachi Jain"
+        ],
+        "year": "2025",
+        "venue": "OpenAI · Technical report",
+        "url": "https://openai.com/index/gpt-5-safe-completions/",
+        "links": {
+          "Official page": "https://openai.com/index/gpt-5-safe-completions/",
+          "PDF": "https://cdn.openai.com/pdf/be60c07b-6bc2-4f54-bcee-4141e1d6c69a/gpt-5-safe_completions.pdf",
+          "arXiv": "https://arxiv.org/abs/2508.09224"
+        },
+        "summary": "A safety-training paradigm focused on helpful responses that stay within safety constraints."
+      },
+      {
+        "title": "OpenAI GPT-5 System Card",
+        "authors": [
+          "Aaditya Singh",
+          "Adam Fry",
+          "Adam Perelman",
+          "et al. (including Yuan Yuan)"
+        ],
+        "year": "2025",
+        "venue": "OpenAI · System card · Revised 2026",
+        "url": "https://openai.com/index/gpt-5-system-card/",
+        "links": {
+          "Official page": "https://openai.com/index/gpt-5-system-card/",
+          "arXiv": "https://arxiv.org/abs/2601.03267"
+        }
+      }
+    ]
+  },
+  {
+    "id": "general-science",
+    "title": "General science journals",
+    "papers": [
+      {
+        "title": "Network Formation and Dynamics Among Multi-LLMs",
+        "authors": [
+          "Marios Papachristou",
+          "Yuan Yuan"
+        ],
+        "year": "2025",
+        "venue": "PNAS Nexus · 4(12), pgaf317",
+        "url": "https://academic.oup.com/pnasnexus/article/4/12/pgaf317/8361967",
+        "links": {
+          "Publisher page": "https://academic.oup.com/pnasnexus/article/4/12/pgaf317/8361967",
+          "Preprint": "https://arxiv.org/abs/2402.10659"
+        }
+      },
+      {
+        "title": "Navigating the New Normal: Examining Coattendance in a Hybrid Work Environment",
+        "authors": [
+          "Marie-Laure Charpignon*",
+          "Yuan Yuan*",
+          "Dehao Zhang*",
+          "Fereshteh Amini",
+          "Longqi Yang",
+          "Sonia Jaffe",
+          "Siddharth Suri"
+        ],
+        "year": "2023",
+        "venue": "PNAS · 120(51), e2310431120",
+        "url": "https://www.pnas.org/doi/10.1073/pnas.2310431120",
+        "links": {
+          "Publisher page": "https://www.pnas.org/doi/10.1073/pnas.2310431120"
+        }
+      },
+      {
+        "title": "Investigating and Modeling the Dynamics of Long Ties",
+        "authors": [
+          "Ding Lyu",
+          "Yuan Yuan",
+          "Lin Wang",
+          "Xiaofan Wang",
+          "Alex Pentland"
+        ],
+        "year": "2022",
+        "venue": "Communications Physics · 5, 87",
+        "url": "https://www.nature.com/articles/s42005-022-00863-w",
+        "links": {
+          "Publisher page": "https://www.nature.com/articles/s42005-022-00863-w"
+        }
+      },
+      {
+        "title": "An Interpretable Approach for Social Network Formation Among Heterogeneous Agents",
+        "authors": [
+          "Yuan Yuan",
+          "Ahmad Alabdulkareem",
+          "Alex “Sandy” Pentland"
+        ],
+        "year": "2018",
+        "venue": "Nature Communications · 9, 4704",
+        "url": "https://www.nature.com/articles/s41467-018-07089-x",
+        "links": {
+          "Publisher page": "https://www.nature.com/articles/s41467-018-07089-x"
+        }
+      }
+    ]
+  },
+  {
+    "id": "business",
+    "title": "Business-school journals",
+    "papers": [
+      {
+        "title": "SUVA: A Probabilistic Framework for Auditing LLMs with an Application to Social Preferences",
+        "authors": [
+          "Yan Leng*",
+          "Yuan Yuan*"
+        ],
+        "year": "2026",
+        "venue": "Information Systems Research · Published online February 2026",
+        "url": "https://pubsonline.informs.org/doi/10.1287/isre.2024.0857",
+        "links": {
+          "Publisher page": "https://pubsonline.informs.org/doi/10.1287/isre.2024.0857",
+          "Preprint": "https://arxiv.org/abs/2312.15198"
+        }
+      },
+      {
+        "title": "Estimating Effects of Long-Term Treatments",
+        "authors": [
+          "Shan Huang*",
+          "Chen Wang*",
+          "Yuan Yuan*",
+          "Jinglong Zhao*",
+          "Brocco (Jingjing) Zhang"
+        ],
+        "year": "2026",
+        "venue": "Management Science · Published online April 2026",
+        "url": "https://pubsonline.informs.org/doi/10.1287/mnsc.2023.02575",
+        "links": {
+          "Publisher page": "https://pubsonline.informs.org/doi/10.1287/mnsc.2023.02575",
+          "Preprint": "https://arxiv.org/abs/2308.08152",
+          "EC 2023 version": "https://dl.acm.org/doi/10.1145/3580507.3597701"
+        }
+      },
+      {
+        "title": "A Two-Part Machine Learning Approach to Characterizing Network Interference in A/B Testing",
+        "authors": [
+          "Yuan Yuan",
+          "Kristen M. Altenburger"
+        ],
+        "year": "2025",
+        "venue": "Manufacturing & Service Operations Management · 27(6), 1832–1850",
+        "url": "https://pubsonline.informs.org/doi/10.1287/msom.2023.0462",
+        "links": {
+          "Publisher page": "https://pubsonline.informs.org/doi/10.1287/msom.2023.0462",
+          "Preprint": "https://arxiv.org/abs/2308.09790",
+          "WWW 2021 version": "https://dl.acm.org/doi/10.1145/3442381.3449845"
+        }
+      },
+      {
+        "title": "Gift Contagion in Online Groups: Evidence from Virtual Red Packets",
+        "authors": [
+          "Yuan Yuan",
+          "Tracy Xiao Liu",
+          "Chenhao Tan",
+          "Qian Chen",
+          "Alex Sandy Pentland",
+          "Jie Tang"
+        ],
+        "year": "2024",
+        "venue": "Management Science · 70(7), 4465–4479 · Online 2023",
+        "url": "https://pubsonline.informs.org/doi/10.1287/mnsc.2023.4906",
+        "links": {
+          "Publisher page": "https://pubsonline.informs.org/doi/10.1287/mnsc.2023.4906",
+          "Preprint": "https://arxiv.org/abs/1906.09698"
+        }
+      }
+    ]
+  },
+  {
+    "id": "computer-science",
+    "title": "Computer science",
+    "papers": [
+      {
+        "title": "Exit Ripple Effects: Understanding the Disruption of Socialization Networks Following Employee Departures",
+        "authors": [
+          "David Gamba",
+          "Yulin Yu",
+          "Yuan Yuan",
+          "Grant Schoenebeck",
+          "Daniel M. Romero"
+        ],
+        "year": "2024",
+        "venue": "ACM Web Conference (WWW)",
+        "url": "https://dl.acm.org/doi/10.1145/3589334.3645634",
+        "links": {
+          "Publisher page": "https://dl.acm.org/doi/10.1145/3589334.3645634",
+          "Preprint": "https://arxiv.org/abs/2402.15683"
+        }
+      },
+      {
+        "title": "Near-Optimal Experimental Design Under the Budget Constraint in Online Platforms",
+        "authors": [
+          "Yongkang Guo",
+          "Yuan Yuan",
+          "Jinshan Zhang",
+          "Yuqing Kong",
+          "Zhihua Zhu",
+          "Zheng Cai"
+        ],
+        "year": "2023",
+        "venue": "ACM Web Conference (WWW)",
+        "url": "https://dl.acm.org/doi/10.1145/3543507.3583528",
+        "links": {
+          "Publisher page": "https://dl.acm.org/doi/10.1145/3543507.3583528",
+          "Preprint": "https://arxiv.org/abs/2302.05005"
+        }
+      },
+      {
+        "title": "Estimating Effects of Long-Term Treatments",
+        "authors": [
+          "Shan Huang*",
+          "Chen Wang*",
+          "Yuan Yuan*",
+          "Jinglong Zhao*",
+          "Jingjing Zhang"
+        ],
+        "year": "2023",
+        "venue": "ACM Economics and Computation (EC) · Conference version",
+        "url": "https://dl.acm.org/doi/10.1145/3580507.3597701",
+        "links": {
+          "Publisher page": "https://dl.acm.org/doi/10.1145/3580507.3597701",
+          "Journal article (2026)": "https://pubsonline.informs.org/doi/10.1287/mnsc.2023.02575"
+        }
+      },
+      {
+        "title": "Spillover Effects in Online Field Experiments: An Annotated Reading List",
+        "authors": [
+          "Yuan Yuan",
+          "Tracy Xiao Liu"
+        ],
+        "year": "2022",
+        "venue": "ACM SIGecom Exchanges · 20(1), 70–72 · Reading list",
+        "url": "https://dl.acm.org/doi/10.1145/3572885.3572893",
+        "links": {
+          "Publisher page": "https://dl.acm.org/doi/10.1145/3572885.3572893",
+          "PDF": "https://www.sigecom.org/exchanges/volume_20/1/YUAN.pdf"
+        }
+      },
+      {
+        "title": "Causal Network Motifs: Identifying Heterogeneous Spillover Effects in A/B Tests",
+        "authors": [
+          "Yuan Yuan",
+          "Kristen M. Altenburger",
+          "Farshad Kooti"
+        ],
+        "year": "2021",
+        "venue": "The Web Conference (WWW) · Conference version",
+        "url": "https://dl.acm.org/doi/10.1145/3442381.3449845",
+        "links": {
+          "Publisher page": "https://dl.acm.org/doi/10.1145/3442381.3449845",
+          "Preprint": "https://arxiv.org/abs/2010.09911",
+          "Journal article (2025)": "https://pubsonline.informs.org/doi/10.1287/msom.2023.0462"
+        }
+      },
+      {
+        "title": "Interpretable and Effective Opinion Spam Detection via Temporal Patterns Mining Across Websites",
+        "authors": [
+          "Yuan Yuan",
+          "Sihong Xie",
+          "Chun-Ta Lu",
+          "Jie Tang",
+          "Philip S. Yu"
+        ],
+        "year": "2016",
+        "venue": "IEEE International Conference on Big Data · 96–105",
+        "url": "https://ieeexplore.ieee.org/document/7840593/",
+        "links": {
+          "Publisher page": "https://ieeexplore.ieee.org/document/7840593/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "working-papers",
+    "title": "Working papers",
+    "note": "Preprints and manuscripts from my earlier research. Conference and journal versions are linked together above.",
+    "papers": [
+      {
+        "title": "Promoting Physical Activity Through Prosocial Incentives on Mobile Platforms",
+        "authors": [
+          "Yuan Yuan",
+          "Christos Nicolaides",
+          "Dean Eckles"
+        ],
+        "year": "2026",
+        "venue": "Working paper · Revised May 2026",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3960420",
+        "summary": "A field experiment studying how prosocial incentives and nudges can encourage physical activity.",
+        "links": {
+          "SSRN preprint": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3960420"
+        }
+      },
+      {
+        "title": "“The Strength of Weak Ties” Varies Across Viral Channels",
+        "authors": [
+          "Shan Huang*",
+          "Yuan Yuan*",
+          "Yi Ji"
+        ],
+        "year": "2024",
+        "venue": "Preprint",
+        "url": "https://arxiv.org/abs/2408.03579",
+        "links": {
+          "arXiv preprint": "https://arxiv.org/abs/2408.03579"
+        }
+      }
+    ]
+  }
+]
